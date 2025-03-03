@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>珊瑚礁生态环境可视化</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="logo">珊瑚礁观察站</div>
+        <div class="nav-links">
+            <a href="#home">首页</a>
+            <a href="#about">关于</a>
+            <a href="#data">数据可视化</a>
+            <a href="#action">保护行动</a>
+            <a href="#contact">联系我们</a>
+            <button id="chatToggle" class="chat-toggle">AI助手</button>
+        </div>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- 聊天界面 -->
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <h3>AI助手</h3>
+            <button class="close-chat" id="closeChat">&times;</button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <!-- 消息将在这里动态添加 -->
+        </div>
+        <div class="chat-input">
+            <textarea id="messageInput" placeholder="输入您的问题..."></textarea>
+            <button id="sendMessage">发送</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>守护珊瑚礁生态系统</h1>
+            <p>通过数据可视化了解珊瑚礁生态现状，共同参与海洋生态保护</p>
+            <a href="#data" class="cta-button">查看实时数据</a>
+        </div>
+    </section>
+
+    <!-- 数据可视化区域 -->
+    <section id="data" class="data-section">
+        <div class="data-container">
+            <h2>珊瑚礁生态数据</h2>
+            <div class="data-grid">
+                <!-- 数据卡片将通过JavaScript动态添加 -->
+            </div>
+            
+            <!-- 添加数据分析轮播 -->
+            <div class="data-carousel-container">
+                <h3>珊瑚礁数据分析</h3>
+                <div class="data-carousel">
+                    <div class="data-carousel-wrapper" id="dataCarousel">
+                        <!-- 数据分析图将通过JavaScript动态添加 -->
+                    </div>
+                    <button class="data-carousel-button prev">&lt;</button>
+                    <button class="data-carousel-button next">&gt;</button>
+                    <div class="data-carousel-indicators" id="dataCarouselIndicators"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 照片轮播 -->
+    <section class="carousel">
+        <div class="carousel-container" id="carousel">
+            <!-- 照片将通过JavaScript动态添加 -->
+        </div>
+        <button class="carousel-button prev">&lt;</button>
+        <button class="carousel-button next">&gt;</button>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>关于我们</h4>
+                <p>致力于珊瑚礁生态系统的保护和研究，通过数据可视化展示海洋生态现状。</p>
+            </div>
+            <div class="footer-section">
+                <h4>快速链接</h4>
+                <nav>
+                    <a href="#home">首页</a>
+                    <a href="#data">数据中心</a>
+                    <a href="#action">保护行动</a>
+                    <a href="#contact">联系我们</a>
+                </nav>
+            </div>
+            <div class="footer-section">
+                <h4>关注我们</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon" title="微信">
+                        <i class="fab fa-weixin"></i>
+                    </a>
+                    <a href="#" class="social-icon" title="微博">
+                        <i class="fab fa-weibo"></i>
+                    </a>
+                    <a href="#" class="social-icon" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2024 珊瑚礁观察站. 保留所有权利。</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
